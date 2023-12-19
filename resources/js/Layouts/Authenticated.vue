@@ -58,6 +58,12 @@ const showingNavigationDropdown = ref(false);
                 >
                   顧客管理
                 </BreezeNavLink>
+                <BreezeNavLink
+                  :href="route('analysis')"
+                  :active="route().current('analysis')"
+                >
+                  データ分析
+                </BreezeNavLink>
               </div>
             </div>
 
@@ -179,6 +185,12 @@ const showingNavigationDropdown = ref(false);
               :active="route().current('customers.index')"
             >
               顧客管理
+            </BreezeResponsiveNavLink>
+            <BreezeResponsiveNavLink
+              :href="route('analysis')"
+              :active="route().current('analysis')"
+            >
+              データ分析
             </BreezeResponsiveNavLink>
           </div>
 
